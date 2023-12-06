@@ -15,7 +15,7 @@ public class Main {
 //        System.out.println(Calculator.div(8, 0));
 
         /**
-         * Задание2: Напишите обобщенный метод compareArrays(), который принимает два массива и возвращает true, если они одинаковые, и false в противном случае.
+         * Задание3: Напишите обобщенный метод compareArrays(), который принимает два массива и возвращает true, если они одинаковые, и false в противном случае.
          * Массивы могут быть любого типа данных, но должны иметь одинаковую длину и содержать элементы одного типа.
          */
         Integer[] arr1 = new Integer[10];
@@ -32,10 +32,16 @@ public class Main {
         System.out.println("разные: " + compareArrays(arr4, arr5));
         System.out.println("одинаковые: " + compareArrays(arr5, arr6));
 
+        /**
+         * Задание 4. Напишите обобщенный класс Pair, который представляет собой пару значений разного типа.
+         * Класс должен иметь методы getFirst(), getSecond() для получения значений пары,
+         * а также переопределение метода toString(), возвращающее строковое представление пары.
+         */
+
 
     }
 
-    //region Задание2 решение
+    //region Задание 3 решение
     public static <T> boolean compareArrays(T[] arr1, T[] arr2){
         Class<?> type1 = arr1.getClass().getComponentType();
         Class<?> type2 = arr2.getClass().getComponentType();
