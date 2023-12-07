@@ -6,25 +6,25 @@ package ru.gb;
  * а также переопределение метода toString(), возвращающее строковое представление пары.
  */
 
-public class Pair <T, U> {
-    T t;
-    U u;
+public class Pair<T, U> {
+    private final T t;
+    private final U u;
 
     public Pair(T t, U u) {
         this.t = t;
         this.u = u;
     }
 
-    void getFirst(){
-
+    public T getT() {
+        return t;
     }
 
-    void  getSecond(){
-
+    public U getU() {
+        return u;
     }
 
     @Override
     public String toString() {
-        return super.toString();
+        return "(" + t + ", " + u + ")";
     }
 }
